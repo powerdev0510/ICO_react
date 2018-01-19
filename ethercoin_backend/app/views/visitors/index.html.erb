@@ -1,2 +1,1099 @@
 <h3>Welcome</h3>
 <p><%= link_to 'Users:', users_path %> <%= User.count %> registered</p>
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com'>
+<link rel="stylesheet" href="https://www.chrysoscoin.com/front/vendors/simple-line-icons/css/simple-line-icons.css">
+
+<link rel="stylesheet" href="https://www.chrysoscoin.com/front/vendors/pe-icon/css/helper.css">
+<link rel="stylesheet" href="https://www.chrysoscoin.com/front/vendors/pe-icon/css/pe-icon-7-stroke.css">
+
+<link rel="stylesheet" href="https://www.chrysoscoin.com/front/css/boot.css?123">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://www.chrysoscoin.com/front/vendors/slick/css/slick.css">
+<link rel="stylesheet" href="https://www.chrysoscoin.com/front/vendors/slick/css/slick-theme.css">
+
+<link rel="stylesheet" href="https://www.chrysoscoin.com/front/vendors/owlcarousel/css/owl.carousel.min.css">
+<link rel="stylesheet" href="https://www.chrysoscoin.com/front/vendors/owlcarousel/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="https://www.chrysoscoin.com/front/vendors/animate.css">
+
+<link rel="stylesheet" href="https://www.chrysoscoin.com/front/vendors/magnific-popup/css/magnific-popup.css">
+
+<link href="https://www.chrysoscoin.com/front/css/style.css?123" rel="stylesheet">
+<script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+<style>
+        #faqAccordion .panel{
+            max-height: 100%;
+            background-color: black;
+        }
+        #faqAccordion .panel-default>.panel-heading{
+            background-color: black;
+        }
+        #faqAccordion .label-primary{
+            background-color: #383e40;
+        }
+        .tim-spe {
+            display: inline-grid;
+            border: 1px solid #ff9d00;
+            padding: 20px;
+            margin-right: 5px;
+            color: #fff;
+            font-weight: bold;
+            width: 8%;
+        }
+        .tim-t{
+            font-size: 30px;
+        }
+        @media  only screen and  (max-width: 768px) {
+            .tim-spe {
+                display: block;
+                width: 32%;
+                margin-top: 13px;
+            }
+            .tim-t{
+                display: block;
+            }
+        }
+        .modal-backdrop.show{
+            opacity: 0.5;
+        }
+        .progress{
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            background: none;
+            margin: 0 auto;
+            box-shadow: none;
+            position: relative;
+        }
+        .progress:after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 12px solid #2C1D16;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .progress > span{
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+        .progress .progress-left{
+            left: 0;
+        }
+        .progress .progress-bar{
+            width: 100%;
+            height: 100%;
+            background: none;
+            border-width: 12px;
+            border-style: solid;
+            position: absolute;
+            top: 0;
+        }
+        .progress .progress-left .progress-bar{
+            left: 100%;
+            border-top-right-radius: 80px;
+            border-bottom-right-radius: 80px;
+            border-left: 0;
+            -webkit-transform-origin: center left;
+            transform-origin: center left;
+        }
+        .progress .progress-right{
+            right: 0;
+        }
+        .progress .progress-right .progress-bar{
+            left: -100%;
+            border-top-left-radius: 80px;
+            border-bottom-left-radius: 80px;
+            border-right: 0;
+            -webkit-transform-origin: center right;
+            transform-origin: center right;
+            animation: loading-1 1.8s linear forwards;
+        }
+        .progress .progress-value{
+            width: 90%;
+            height: 90%;
+            border-radius: 50%;
+            background: transparent;
+            font-size: 18px;
+            color: #ff9d00;
+            line-height: 135px;
+            text-align: center;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+        }
+        .progress.yellow .progress-bar{
+            border-color: #ff9d00;
+        }
+        .progress.yellow .progress-left .progress-bar{
+            animation: loading-2 1s linear forwards 1.8s;
+        }
+        @keyframes  loading-1{
+            0%{
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100%{
+                -webkit-transform: rotate(151.2deg);
+                transform: rotate(151.2deg);
+            }
+        }
+        @keyframes  loading-2{
+            0%{
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100%{
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+        }
+        @media  only screen and (max-width: 990px){
+            .progress{ margin-bottom: 20px; }
+        }
+    </style>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-956348141"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-956348141');
+    </script>
+
+<script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '676362249087003');
+        fbq('track', 'PageView');
+    </script>
+<noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=676362249087003&ev=PageView&noscript=1"/>
+    </noscript>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111526994-1"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-111526994-1');
+    </script>
+</head>
+<body data-scroll-animation="true" class="dark-theme">
+
+  <div class="preloader" id="preloader">
+    <svg class="spinner" id="pageloader_anime" width="32px" height="32px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+      <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+    </svg>
+  </div>
+
+<section class="slider-bg" style="background-image: url(https://www.chrysoscoin.com/front/images/bg.jpg);background-size: cover;width: 100%;">
+<div class="container">
+<br /><br /><br /><br />
+<div class="container1">
+<h1 style="text-align: center;font-weight:300;">FUTURE OF DIGITAL FINANCE</h1>
+<br />
+<h2 class="head3" style="text-align: center;">PHASE 5 STARTED</h2>
+<h3 class="head3" style="text-align: center;">1 CHR = $ 1.65</h3>
+<br>
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+<div class="progress yellow">
+<span class="progress-left">
+<span class="progress-bar"></span>
+</span>
+<span class="progress-right">
+<span class="progress-bar"></span>
+</span>
+<div class="progress-value">
+<small>42% Sold</small>
+</div>
+</div>
+</div>
+</div>
+<br>
+<h4 class="head3" style="text-align: center;">PRICE WILL INCREASE IN</h4>
+<center>
+<div id="clock"></div>
+</center>
+<br />
+</div>
+<br /><br />
+<center>
+<a href="https://www.chrysoscoin.com/front/whitepaper-V2.0.pdf" target="_blank" class="btn btn-primary mr-2 reveal fadeInUp" data-wow-delay="0.6s" style="width: 220px;text-align: center;">WHITE PAPERS</a>
+<a href="https://www.chrysoscoin.com/register" class="btn btn-primary mr-2 reveal fadeInUp" data-wow-delay="0.6s" style="width: 220px;text-align: center;">BUY TOKENS</a>
+</center>
+<br /><br /><br /><br /><br /><br />
+</div>
+</section>
+<div class="clearfix"></div>
+
+<section class="skew-bg space" id="about" style="background-image: url(https://www.chrysoscoin.com/front/images/black.jpg);">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h2 class="reveal fadeInUp" style="text-align: center;text-transform: uppercase;font-weight:300;">About Chrysos</h2>
+<p class="reveal fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">
+CHRYSOS is future of digital finance. CHRYSOS Coin is blockchain powered P2P cryptocurrency. Aim of CHRYSOS is give investors financial freedom with security & trust of blockchain. We called it “Future of digital finance”. We are sure CHRYSOS will change entire digital finance industry in future.<br /><br />
+Anyone can earn daily profit by investing CHRYSOS coin in CHRYSOS lending program. CHRYSOS pure lending program specially designed for high profit with low risk.<br /><br />
+CHRYSOS is working on “Pure Lending” concept. Where investors make huge profit on their investments because of it’s pure lending concept.There is huge difference between CHRYSOS and other traditional investment programs. CHRYSOS is based on “Pure Lending” concept. That means you will get 100% assets back at maturity.
+CHRYSOS offers daily payout of your ROI. You will get daily payout in your USD wallet as per your plan. You can withdraw or re-invest it any time.
+CHRYSOS offer 24 X 7 Online Support to their investors.
+</p>
+</div>
+</div>
+</div>
+</section>
+<div class="clearfix"></div>
+
+<section class="space light-bg" id="about" style="background-image: url(https://www.chrysoscoin.com/front/images/grey.jpg);">
+<div class="container">
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<h2 class="reveal fadeInUp" style="text-align: center;text-transform: uppercase;font-weight:300;">why Chrysos</h2>
+<p class="reveal fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">CHRYSOS is future of digital finance. CHRYSOS Coin is blockchain powered P2P cryptocurrency. Aim of CHRYSOS is give investors financial freedom with security & trust of blockchain. We called it “Future of digital finance”. We are sure CHRYSOS will change entire digital financé industry in future.<br /><br />
+Anyone can earn daily profit by investing CHRYSOS coin in CHRYSOS lending program. CHRYSOS pure lending program specially designed for high profit with low risk.<br /><br />
+CHRYSOS is working on “Pure Lending” concept. Where investors make huge profit on their investments because of it’s pure lending concept.
+</p>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<center> <img src="https://www.chrysoscoin.com/front/images/logo8.png" class="img-responsive reveal fadeInUp" style="width:300px;height:300px; margin-top: 15%;">
+</center>
+</div>
+</div>
+</section>
+<div class="clearfix"></div>
+
+<section class="space light-bg" id="tokensale" style="background-image:url(https://www.chrysoscoin.com/front/images/black.jpg);">
+<div class="container">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h2 class="reveal fadeInUp" style="text-align: center;text-transform: uppercase;font-weight:300;">token sale</h2>
+<p class="reveal fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">CHRYSOS token sale event will held for 30 days. There will be crowd sale for 48 hours. After that there will be total 6 phases of token sale. Starting price of token sale will be $0.85 and at end it will be $1.85. It’s best time to get CHRYSOS coins during ICO as price will be lower. After ICO ends CHRYSOS coin will listed on exchanges and opening price will be $14 and it will increase day by day because of demand and limited supply.
+</p>
+</div>
+</div>
+<br /><br />
+<div class="container">
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div id="container" style=" height: 334px;" data-highcharts-chart="0">
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-top: 20px;padding-bottom: 20px;">
+<table class="table reveal fadeInUp">
+<thead style="color: white;border: 1px solid #ff9d00;">
+<tr>
+<th style="color: #ff9d00;border: 1px solid #ff9d00;text-align: center;">PHASE</th>
+<th style="color: #ff9d00;border: 1px solid #ff9d00;text-align: center;">TOKENS</th>
+<th style="color: #ff9d00;border: 1px solid #ff9d00;text-align: center;">TOKENS RATE</th>
+<th style="color: #ff9d00;border: 1px solid #ff9d00;text-align: center;">STATUS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">Pre - ICO</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">2000000</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">$0.50</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">Completed</td>
+</tr>
+<tr>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">Crowd Sale</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">1500000</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">$0.65</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">Completed</td>
+</tr>
+<tr>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">Phase 1</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">1000000</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">$0.85</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">Completed</td>
+</tr>
+<tr>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">Phase 2</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">1000000</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">$1.05</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">Completed</td>
+</tr>
+<tr>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">Phase 3</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">1000000</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">$1.25</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">Completed</td>
+</tr>
+<tr>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">Phase 4</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">1000000</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">$1.45</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">Completed</td>
+</tr>
+<tr>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">Phase 5</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">1000000</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">$1.65</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">Started</td>
+</tr>
+<tr>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">Phase 6</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">1000000</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">$1.85</td>
+<td style="color: white;border: 1px solid #ff9d00;text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<div class="clearfix"></div>
+
+<section class="space" id="lending" style="background-image: url(https://www.chrysoscoin.com/front/images/grey.jpg);">
+<div class="container">
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<h2 class="reveal fadeInUp" style="text-align: center;text-transform: uppercase;font-weight:300;">lending program</h2>
+<p class="reveal fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">CHRYSOS lending program is pure lending program rather than other lending programs in current market. In traditional lending program investors’ have to invest in cryptocurrency in value of USD and they will get their investment back in cryptocurrency but in value of USD.<br /><br />
+But with CHRYSOS you will have to invest in CHR coin in value of USD and you will get exact amount of CHR coins at maturity. For example you invested $100 of CHR coins when rate of CHR coin is $1 that means you invested 100 coins for $100. At time of maturity you will get 100 coins back in your wallet. At time of maturity if your CHR coin price is $10 then you will get $1000 equivalent of coins in your wallet. That means you will get your 100% assets back at time of maturity. This is called pure lending.
+</p>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<table class="table reveal fadeInUp" style="margin-top: 25%;">
+<thead style="color: #ff9d00;border: 1px solid #ff9d00;">
+<tr>
+<th style="color: #ff9d00;border: 1px solid #ff9d00;text-align: center;">INVESTMENT SLAB</th>
+<th style="color: #ff9d00;border: 1px solid #ff9d00;text-align: center;">DAILY PROFIT</th>
+<th style="color: #ff9d00;border: 1px solid #ff9d00;text-align: center;">HOLDING TIME</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="color:#white ;border: 1px solid #ff9d00;text-align: center;">$100 - $999</td>
+<td style="color:white ;border: 1px solid #ff9d00;text-align: center;">1.5% Daily
+</td>
+<td style="color:white;border: 1px solid #ff9d00;text-align: center;">210 Days</td>
+</tr>
+<tr>
+<td style="color:#white ;border: 1px solid #ff9d00;text-align: center;">$1000 - $4999</td>
+<td style="color:white ;border: 1px solid #ff9d00;text-align: center;">1.5% + 0.15% Daily Bonus
+</td>
+<td style="color:white;border: 1px solid #ff9d00;text-align: center;">180 Days</td>
+</tr>
+<tr>
+<td style="color:#white ;border: 1px solid #ff9d00;text-align: center;">$5000 - $9999</td>
+<td style="color:white ;border: 1px solid #ff9d00;text-align: center;">1.5% + 0.20% Daily Bonus
+</td>
+<td style="color:white;border: 1px solid #ff9d00;text-align: center;">120 Days</td>
+</tr>
+<tr>
+<td style="color:#white ;border: 1px solid #ff9d00;text-align: center;">$10000 - $99999</td>
+<td style="color:white ;border: 1px solid #ff9d00;text-align: center;">1.5% + 0.25% Daily Bonus
+</td>
+<td style="color:white;border: 1px solid #ff9d00;text-align: center;">90 Days</td>
+</tr>
+<tr>
+<td style="color:#white ;border: 1px solid #ff9d00;text-align: center;">$100000 +</td>
+<td style="color:white ;border: 1px solid #ff9d00;text-align: center;">1.5% + 0.35% Daily Bonus
+</td>
+<td style="color:white;border: 1px solid #ff9d00;text-align: center;">60 Days</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<div class="clearfix"></div>
+
+<section class="space light-bg" id="opportunity" style="background-color: black;background-image: url(https://www.chrysoscoin.com/front/images/black.jpg);">
+<div class="container">
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<img src="https://www.chrysoscoin.com/front/images/earning1.png" class="img-responsive reveal fadeInUp" style="width: 500px; height: 300px;float: left;margin-top: 20%;">
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<h2 class="reveal fadeInUp" style="text-align: center;text-transform: uppercase;font-weight:300;">earning opportunity</h2>
+<p class="reveal fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">There are four types of earning opportunity having CHRYSOS. Mining, Staking, Trading & Lending.
+CHRYSOS coins are Hybrid ctyptocurrency any one with CPU or GPU can mine CHRYSOS coins. Scrypt mining algorithm prevent ASICs to mine CHRYSOS.
+With our PoW facility anyone who hold CHRYSOS coins in their wallet for minimum of 15 days will get rewards in term of PoS interest. Anyone who hold their coins in wallet for a year will get 120% of interest. For investors who don’t want to lend their CHRYSOS coins can also make huge profit.<br /><br />
+There is very huge earning opportunity in CHRYSOS trading. Anyone can make huge profit by buying and selling CHRYSOS on exchanges.
+Lending will be best option for making profit with your CHRYSOS Coins. As our lending program is 100% secured with blockchain technology. Also your assets will remain same at maturity. In our opinion lending CHRYSOS will be best option for anyone because of huge potential of earning.
+</p>
+</div>
+</div>
+</section>
+<div class="clearfix"></div>
+
+<section class="space light-bg" id="refferal" style="background-image: url(https://www.chrysoscoin.com/front/images/grey.jpg);">
+<div class="container">
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-top: 10%;">
+<h2 class="reveal fadeInUp" style="text-align: center;text-transform: uppercase;font-weight:300;">refferal program</h2>
+<p class="reveal fadeInUp" data-wow-delay="0.3s" style="text-align: justify;">
+CHRYSOS offers 2 level referral program with up to 20% bonus during ICO. Anyone can join referral program and earn free CHR Tokens by referring investors to CHRYSOS.
+CHRYSOS offers 3 level referral program with up to 10% commission in lending portal. If someone invested with your referral code or referral link then you will get commission in your USD wallet. You will get monthly commission on your referral’s monthly profit also.
+</p>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<h2 class="reveal fadeInUp" style="text-align: center;color: #ff9d00;font-weight:300;">ICO</h2>
+<table class="table reveal fadeInUp">
+<thead style="color: #ff9d00;border: 1px solid #ff9d00;">
+<tr>
+<th style="color: #ff9d00;border: 1px solid #ff9d00;text-align: center;">LEVEL</th>
+<th style="color: #ff9d00;border: 1px solid #ff9d00;text-align: center;">COMMISION RATE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="color:#white ;border: 1px solid #ff9d00;text-align: center;">Level 1</td>
+<td style="color:white ;border: 1px solid #ff9d00;text-align: center;">15%</td>
+</tr>
+<tr>
+<td style="color:#white ;border: 1px solid #ff9d00;text-align: center;">Level 2</td>
+<td style="color:white ;border: 1px solid #ff9d00;text-align: center;">5%</td>
+</tr>
+</tbody>
+</table>
+<h2 class="reveal fadeInUp" style="text-align: center;color: #ff9d00;font-weight:300;">LENDING</h2>
+<table class="table reveal fadeInUp">
+<thead style="color: #ff9d00;border: 1px solid #ff9d00;">
+<tr>
+<th style="color: #ff9d00;border: 1px solid #ff9d00;text-align: center;">LEVEL</th>
+<th style="color: #ff9d00;border: 1px solid #ff9d00;text-align: center;">COMMISION RATE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="color:#white ;border: 1px solid #ff9d00;text-align: center;">Level 1</td>
+<td style="color:white ;border: 1px solid #ff9d00;text-align: center;">7%</td>
+</tr>
+<tr>
+<td style="color:#white ;border: 1px solid #ff9d00;text-align: center;">Level 2</td>
+<td style="color:white ;border: 1px solid #ff9d00;text-align: center;">3%</td>
+</tr>
+<tr>
+<td style="color:#white ;border: 1px solid #ff9d00;text-align: center;">Level 3</td>
+<td style="color:white ;border: 1px solid #ff9d00;text-align: center;">1%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<div class="clearfix"></div>
+
+<section id="roadmap" style="background-image: url(https://www.chrysoscoin.com/front/images/black.jpg);">
+<br /><br /><br />
+<div class="container">
+<h2 class="reveal fadeInUp" style="text-align: center;font-weight:300;text-transform:uppercase;">Road Map</h2><br /><br />
+<div class="container" style="border-bottom: 1px dashed #383e40; ">
+<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+<p style="color: #ff9d00;font-weight: bold;font-size: 20px;"> Jan - 2017 </p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+<p style="font-size: 20px;">Concept Planning , Market Research</p>
+</div>
+</div>
+<br /><br />
+<div class="container" style="border-bottom: 1px dashed #383e40;">
+<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+<p style="color: #ff9d00;font-weight: bold;font-size: 20px;"> Jun - 2017 </p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+<p style="font-size: 20px;">Product Design , Feasiblity Study</p>
+</div>
+</div>
+<br /><br />
+<div class="container" style="border-bottom: 1px dashed #383e40;">
+<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+<p style="color: #ff9d00;font-weight: bold;font-size: 20px;"> Aug - 2017 </p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+<p style="font-size: 20px;">ICO Planning & Documentation , Investment Portal Planning & Documentation</p>
+</div>
+</div>
+<br /><br />
+<div class="container" style="border-bottom: 1px dashed #383e40;">
+<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+<p style="color: #ff9d00;font-weight: bold;font-size: 20px;"> Oct - 2017 </p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+<p style="font-size: 20px;">Planning & Documentation of CHRYSOS Coin</p>
+</div>
+</div>
+<br /><br />
+<div class="container" style="border-bottom: 1px dashed #383e40;">
+<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+<p style="color: #ff9d00;font-weight: bold;font-size: 20px;"> Dec - 2017 </p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+<p style="font-size: 20px;">ICO Token Sale Event , MVP of Investment Portal</p>
+</div>
+</div>
+<br /><br />
+<div class="container" style="border-bottom: 1px dashed #383e40;">
+<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+<p style="color: #ff9d00;font-weight: bold;font-size: 20px;"> Jan - 2018 </p>
+</div>
+ <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+<p style="font-size: 20px;">Launch Of CHRYSOS Coin , Launch Of CHRYSOS Investment Portal , Opening Price 1 CHR = $14</p>
+</div>
+</div>
+<br /><br />
+<div class="container" style="border-bottom: 1px dashed #383e40;">
+<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+<p style="color: #ff9d00;font-weight: bold;font-size: 20px;"> Feb - 2018 </p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+<p style="font-size: 20px;">Opening Law Offices Worldwide , Projected Price 1 CHR = $24</p>
+</div>
+</div>
+<br /><br />
+<div class="container" style="border-bottom: 1px dashed #383e40;">
+<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+<p style="color: #ff9d00;font-weight: bold;font-size: 20px;"> Mar - 2018 </p>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+<p style="font-size: 20px;">Projected Price 1 CHR = $42</p>
+</div>
+</div>
+<br /><br />
+</div>
+<br /><br /><br />
+</section>
+<div class="clearfix"></div>
+
+<section class="space light-bg" style="background-image: url(https://www.chrysoscoin.com/front/images/grey.jpg);">
+<div class="container">
+<h2 class="reveal fadeInUp" style="text-align: center;font-weight:300;">FAQs</h2>
+<div class="margin-botm"></div>
+<div class="panel-group" id="faqAccordion">
+<div class="panel panel-default">
+<div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0" aria-expanded="false" style="cursor:pointer;">
+<h4 class="panel-title">
+Q: WHAT IS AN ICO?
+</h4>
+</div>
+<div id="question0" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
+<div class="panel-body">
+<h5><span class="label label-primary">Answer</span></h5>
+<p>Initial coin offering (ICO) is an one type of crowdfunding via use of cryptocurrency, It is secure and transparent mechanism which allows CHRYSOSCOIN to issues digital shares (COIN) in exchange for investments.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default ">
+<div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1" aria-expanded="false" style="cursor:pointer;">
+<h4 class="panel-title">
+Q: WHEN IS THE START OF THE ICO AND WHAT IS LAUNCH DATE?
+</h4>
+</div>
+<div id="question1" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
+<div class="panel-body">
+<h5><span class="label label-primary">Answer</span></h5>
+<p>The ICO launches on December-27-2017 12:00 PM UTC and will ends on January-26-2018 12:00 AM UTC.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default ">
+<div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question2" aria-expanded="false" style="cursor:pointer;">
+<h4 class="panel-title">
+Q: HOW TO DEPOSIT?
+</h4>
+</div>
+<div id="question2" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
+<div class="panel-body">
+<h5><span class="label label-primary">Answer</span></h5>
+<p>The purchase of CHRYSOSCOIN is available on the https://chrysoscoin.com in ICO dashboard using payment method:
+<br>Bitcoin(BTC) | Ethereum(ETH) | Litecoin(LTC) | BitCash(BCH)
+</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default ">
+<div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question3" aria-expanded="false" style="cursor:pointer;">
+<h4 class="panel-title">
+Q: WHAT IS THE EXPECTED VALUE OF CHRYSOS COIN?
+</h4>
+</div>
+<div id="question3" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
+<div class="panel-body">
+<h5><span class="label label-primary">Answer</span></h5>
+<p>For the ICO, the price of 1 CHR is 0.50 USD. The total amount of CHR used into project during the project development, funding, media coverage through development of whole project and dividend expectancies will be main form factors for CHR exchange rates, once it is listed at cryptocurrency exchanges after ICO. The initial price of 1 CHR is fixed at 0.50 USD and it will increasing during the ICO.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default ">
+<div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question4" aria-expanded="false" style="cursor:pointer;">
+<h4 class="panel-title">
+Q: WHAT IS THE MINIMUM TOKEN TO BUY?
+</h4>
+</div>
+<div id="question4" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
+<div class="panel-body">
+<h5><span class="label label-primary">Answer</span></h5>
+<p>During the ICO minimum Tokens to buy is 100 CHR.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default ">
+<div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question5" aria-expanded="false" style="cursor:pointer;">
+<h4 class="panel-title">
+Q: HOW CAN I MAKE A PURCHASE IN CRYPTOCURRENCY?
+</h4>
+</div>
+<div id="question5" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
+<div class="panel-body">
+<h5><span class="label label-primary">Answer</span></h5>
+<p>Create your account using signup link provided on the homepage. Verify your email address and log into the dashboard.</p>
+<p>On the dashboard Add the Token amount and click to submit. Currently we accepts BTC.</p>
+<p>Once you hit the submit button, the order will be generated and you will see unique address, where you need to send coins. Also there is an option to scan QR code and send payment.</p>
+<p>As soon as you send payment, the order will be in pending status. Once it reaches minimum 6 confirmations, the order will be confirmed and related CHR amount will be updated in your dashboard.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default ">
+<div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question6" aria-expanded="false" style="cursor:pointer;">
+<h4 class="panel-title">
+Q: WILL THERE BE AN ADDITIONAL ISSUE OF TOKENS?
+</h4>
+</div>
+<div id="question6" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
+<div class="panel-body">
+<h5><span class="label label-primary">Answer</span></h5>
+<p>There will be no additional CHR Token emission, and the unsold tokens will be burned after ICO ends.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default ">
+<div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question7" aria-expanded="false" style="cursor:pointer;">
+<h4 class="panel-title">
+Q: HOW DO I KNOW MY TOKENS ARE SECURE?
+</h4>
+</div>
+<div id="question7" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
+<div class="panel-body">
+<h5><span class="label label-primary">Answer</span></h5>
+<p>To secure your tokens in CHRYSOSCOIN wallet, we encourage you to do not share your chrysoscoin.com login credentials with anyone. Once ICO is over, every users can send CHR tokens to private CHRYSOSCOIN wallets or cryptocurrency exchanges where CHRYSOSCOIN is listed.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default ">
+<div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question8" aria-expanded="false" style="cursor:pointer;">
+<h4 class="panel-title">
+Q: CAN I BUY TOKENS IN FRACTIONS? (I.E 31.05 CHR)
+</h4>
+</div>
+<div id="question8" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
+<div class="panel-body">
+<h5><span class="label label-primary">Answer</span></h5>
+<p>Each CHRYSOSCOIN token can be split down up to 8 decimal points. The 0.0000001 CHR is the smallest fraction.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default ">
+<div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question9" aria-expanded="false" style="cursor:pointer;">
+<h4 class="panel-title">
+Q: HOW MANY TOKENS ARE ISSUED DURING THE ICO?
+</h4>
+</div>
+<div id="question9" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
+<div class="panel-body">
+<h5><span class="label label-primary">Answer</span></h5>
+<p>Based on the research of future markets, we have estimated the maximum amount of funds we would accept. In order to raise the fund for developments, R&amp;D operations the maximum amount of 9.5 Million CHR token is available in ICO.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default ">
+<div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question10" aria-expanded="false" style="cursor:pointer;">
+<h4 class="panel-title">
+Q: HOW CAN I USE THE CHR AFTER THE ICO?
+</h4>
+</div>
+<div id="question10" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
+<div class="panel-body">
+<h5><span class="label label-primary">Answer</span></h5>
+<p>After the ICO, the CHR token will be listed on cryptocurrency exchanges. Each CHR token holder can use their tokens in exchanges for trading as well as transfer it to other users.
+As part of our development roadmap, CHR token will be usable in Payment Gateway, In chat payments, Invoicing, Corporate Business tools and as a cryptocurrency in more than thousands of services.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<footer class="space" style="background-image: url(https://www.chrysoscoin.com/front/images/black.jpg);">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center-block">
+<a href="https://www.facebook.com/chrysoscoin" target="_blank"> <img src="https://www.chrysoscoin.com/front/images/facebook.png" style="width: 80px;height: 80px;padding: 10px;"> </a>
+<a href="https://www.youtube.com/channel/UCmqImYTvhXFTvGPIzH097mA" target="_blank"> <img src="https://www.chrysoscoin.com/front/images/youtube.png" style="width: 80px;height: 80px;padding: 10px;"> </a>
+<a href="https://t.me/chrysosnews" target="_blank"><img src="https://www.chrysoscoin.com/front/images/telegram.png" style="width: 80px;height: 80px;padding: 10px;"> </a>
+<br /><br />
+<p class="reveal fadeInUp">Copyright © 2017. All rights reserved CHRYSOSCOIN.COM</p>
+<a href="#" data-toggle="modal" data-target="#myModal" class="reveal fadeInUp" data-wow-delay="0.6s" style="color:#ff9d00;text-decoration:none;">TERMS & CONDITIONS</a>
+<a href="#" data-toggle="modal" data-target="#myModal1" class=" reveal fadeInUp" data-wow-delay="0.9s" style="color:#ff9d00;text-decoration:none;">PRIVACY POLICY</a>
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+<div class="modal-dialog modal-lg">
+
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h4 class="modal-title" style="color: black;">Terms & Conditions</h4>
+</div>
+<div class="modal-body">
+<p style="color: black;text-align: justify;">SECTION 1. TERMS & CONDITIONS STATUS AND ACCEPTANCE<br />
+SECTION 2. DEFINITIONS<br />
+SECTION 3. GENERAL PROVISIONS<br />
+SECTION 4. USER’S WEBSITE REGISTRATION AND USER’S ACCOUNT<br />
+SECTION 5. INDEMNIFICATION<br />
+SECTION 6. NO WARRANTIES AND LIMITATION OF LIABILITY<br />
+SECTION 7.DISCLAIMERS<br />
+SECTION 8. INTELLECTUAL PROPERTY RIGHTS<br />
+SECTION 9. APPLICABLE LAW AND DISPUTE RESOLUTION<br />
+SECTION 10. MISCELLANEOUS<br /><br />
+Read carefully these terms and conditions. They affect your obligations, legal rights, waivers of rights and limitation of liability. If You disagree with these terms and conditions, You must not access or use in any way the website or buy Chrysos tokens.
+IMPORTANT<br /><br />
+Ownership of Chrysos Tokens during the ICO carries no rights express or implied. Purchases of Chrysos Tokens are non-refundable. Purchasers should have no expectation of influence over governance of the platform. By participating in the sale of Chrysos Tokens, You expressly acknowledge and represent that You have carefully reviewed the Terms and fully understand the costs, and benefits of purchasing Chrysos Tokens and agree to be bound by these Terms. As set forth below, You further represent and warrant that, to the extent permitted by law, You are authorized to purchase Chrysos Tokens in your relevant jurisdiction, are of a legal age to be bound by these Terms, and will not hold Chrysos Tokens, its parent and affiliates, and the officers, directors, agents, joint ventures, employees and suppliers of Chrysos Tokens or our parent or affiliates, now or in the future and any other member of the Chrysos Team liable for any losses or any special, incidental, or consequential damages arising out of, or in any way connected to the sale of Chrysos Tokens. <br /><br />
+<span style="font-weight: bold;">SECTION 1. TERMS & CONDITIONS STATUS AND ACCEPTANCE</span><br /><br />
+1.1. These General Terms & Conditions (hereinafter referred to as the “Terms”), including any Accompanying Documents, constitute a legally binding agreement between the Chrysos and any Users as defined herein in Definitions Section.<br /><br />
+1.2. Each User as defined herein in Definitions Section must carefully read and comply with these Terms. It is understood that the fact of the website use and/or Chrysos Tokens purchase the Chrysos services User fully read, understood and accepted these Terms and Conditions. If User does not agree with conditions expressed hereafter, such User should stop use of site and withhold purchase of Chrysos tokens as defined herein.
+<br /><br />
+<b>SECTION 2. DEFINITIONS</b><br /><br />
+The following definitions are used throughout the text of terms and they shall have the following meanings:
+Accompanying Documents are any other Chrysos Token Sale regulatory documents, they shall accompany and detail these Terms. They are inalienable part hereof and published on the Website (including, but not limited to Privacy Policy, Chrysos Tokens, Whitepaper, Sale Policy, etc.). The latter shall apply if there are any discrepancies between Accompanying Documents and Terms.<br /><br />
+Account is a User’s digital account created on the Website. It is created and provides access to purchase Chrysos tokens during Chrysos Token Sale. A User is given access to his or her personal account upon creation the account through providing the Website and Chrysos with all necessary information. Only authorized Users who were accepted by Chrysos can purchase Chrysos Tokens on terms specified herein.<br /><br />
+Affiliates are persons, entities who have any relation to the Chrysos including partners, agents, contractors, employees of Chrysos.
+Agreement are these Terms and any other rules, legal procedures, policies that may be issued by the Chrysos team and published on Website (including the Accompanying Documents).<br /><br />
+Applicable Law in relation to a party shall include all and any statutes and subordinate legislation and common law; regulations; ordinances and bylaws; directives, codes of practice, circulars, guidance notices, judgments and decisions of any competent authority, or any governmental, intergovernmental or supranational body, agency, department or regulatory, self-regulatory or other authority or organization; and other similar provisions, as promulgated in any jurisdiction, from time to time, compliance with which is mandatory for that party. <br /><br />
+Cryptocurrency - digital currency, supported and represented by Ethereum (ETH). It is used by Users to enable purchasing Chrysos Tokens.<br /><br />
+Chrysos is a digital platform and legal entity. It is designed to create a marketplace for contractors and customers for improvement of their interaction. Exchange between both parties is implemented through the use of Chrysos Tokens. Development, implementation of the core features of Chrysos is the main purpose of Chrysos Token Sale. Chrysos is not a stock or other investment instrument exchange.<br /><br />
+Chrysos Team are creators and but not limited to employees, contractors and initiators of Chrysos ideas. Team members are presented on the main page of Chrysos. They are experts in conducting business and supporting projects like Chrysos. <br /><br />
+Chrysos Tokens are cryptographic tokens distributed by Chrysos for use. They are software digital products (without being a new cryptocurrency). They are created by Chrysos Team as proof of a limited right for the of the Chrysos, if it is successfully launched and produced in compliance with terms specified herein. Mentioned Chrysos Tokens are not securities, they are not registered with any government entity as a security and should not be in any case be considered as securities. Chrysos Tokens are not intended to be any kind of commodity or financial instrument, they do not represent a share or stake or equivalent rights including any right to acquire future revenue shares, intellectual property rights. They do not represent any ownership right.<br /><br />
+Ethereum Smart Contract – digital computer protocol intended to facilitate, verify and enforce the negotiation and purchase of Chrysos Tokens by a User. Also Ethereum Smart Contract will be used as a verifying, enforcing and facilitating tool for contracts between service-providers and customers within the Chrysos Marketplace.<br /><br />
+User (also referred to as “You”) any person who somehow accesses and/or uses the Website with or without prior registration, authorization using the Account and purchases of Chrysos Tokens. The Chrysos team reserves its right to set force at any time on its own discretion special eligibility or other requirements to certain Users to take part in Chrysos token sale (i.e. business owners of larger companies, leaders of established companies, etc.) as shall mentioned on Chrysos Website and the Whitepaper.<br /><br />
+Website is the website that maintained and owned by Chrysos at www.Chrysos.com Chrysos (also referred to as “Company”, “We”, “Us”) a company that is incorporated by the Chrysos Team under legislation of USA, Delaware (or another jurisdiction as shall be decided by the Chrysos team) for the sole purpose of Chrysos development, not being a financial entity, investment partner. The respective details of the Company shall be published on the Website. Until the date of Company incorporation any and all rights, obligations of the Chrysos as described herein and in any Accompanying Documents shall fully belong to the Chrysos Team.<br /><br />
+Whitepaper – one of the official Accompanying Documents published by the Chrysos on the Website, describing technical and marketing details of the Chrysos, the idea and purpose of Chrysos, as well as respective pricing and tokens distribution periods. <br /><br />
+<b>SECTION 3. GENERAL PROVISIONS</b><br /><br />
+3.1. United States, Singaporean, Chinese or South Korean citizens and residents are not eligible to purchase Chrysos Tokens. You are only allowed to purchase Chrysos Tokens if and by buying Chrysos Tokens You covenant, represent, and warrant that You are neither a US, Singaporean, Chinese or South Korean citizen or permanent resident of the United States, Singapore, China or South Korea, nor do You have a primary residence or domicile in the United states, Singapore, China or South Korea, including Puerto Rico, the US Virgin Islands, and any other possessions of the United States. In order to buy Chrysos Tokens and by buying Chrysos Tokens You covenant, represent, and warrant that none of the owners of the company, of which You are an authorized officer, are US citizen or permanent resident of the United States, Singapore, China or South Korea, nor do You have a primary residence or domicile in the United States, Singapore, China or South Korea, including Puerto Rico, the US Virgin Islands, and any other possessions of the United States, Singapore, China or South Korea. Should this change at any time, You shall immediately notify Chrysos. The company shall reserve the right to refuse selling Chrysos Tokens to anyone who does not meet criteria necessary for their buying, as set out hereunder and by the applicable law. In particular, the company may refuse selling Chrysos Tokens to US, Singaporean, Chinese or South Korean citizens, permanent residents of the United states, Singapore or China and those users who do not meet any criteria specified in this section.<br /><br />
+3.2. A User shall not use the Website if under the Applicable Law and/or law of the country of User’s residence he (she) is prohibited from using it. Any User that is in any manner limited or prohibited from the purchase, possession, transfer, use or other transaction involving any amount of Chrysos Tokens under the mentioned law should not access this Website and is prohibited accessing, referencing, engaging, or otherwise using this Website.<br /><br />
+3.3. These Terms take effect at the time the User begins use of the Website. The Users may withdraw from their obligation under the Terms at any time by closing the site window and discontinuing the use of the Chrysos Website.<br /><br />
+3.4. By using this Website each User covenants, represents, and warrants that (under the Applicable Law and law of the country of User’s residence): <br /><br />
+• You are of an age of majority (at least 18 years old) to enter into this Agreement, meet all other eligibility and residency requirements, and are fully able and legally competent to enter into the terms, conditions, obligations, affirmations, representations, and warranties set forth herein and to abide by and comply herewith;<br />
+• You are aware of all the merits, risks and any restrictions associated with cryptographic tokens (their buying and use), cryptocurrencies and Blockchain-based systems, as well as You know how to manage them, and You are solely responsible for any evaluations based on such your knowledge; <br />
+• You have necessary and relevant experience and knowledge to deal with cryptographic tokens, cryptocurrencies and Blockchain-based systems, as well as You have full understanding of their framework. <br /><br />
+3.5. The User acknowledges and accepts that the Chrysos reserves the right, at its own and complete discretion and at any time to modify or to temporarily or permanently suspend or eliminate the Website, and/or disable any access to the Website for any reason.<br /><br />
+3.6. The User acknowledges and accepts that these Terms are subject to change, modifications, amendments, alterations or supplements at any time without prior written notice, at Chrysos’s sole discretion. Continuing use of the Website after any amendments shall constitute the User’s consent with updated Terms. At any case the date of the most recent change of Terms will indicated on top of these Terms. The User’s continued use of the Website after any amendments or alterations of these Terms and/or the Website shall constitute the User’s full consent hereto and acceptance hereof. At any case, the date of the most recent amendments and alterations will be indicated at the top of these Terms at all times.<br /><br />
+3.7. The pages of the Website may contain links to third-party websites and services. Such links are provided for Your convenience but their presence does not mean that they are recommended by Chrysos. In addition, Chrysos does not guarantee their safety and conformity with any User expectations. Furthermore, we are not responsible for maintaining any materials referenced from another site, and makes no warranties for that site or this service in such context. Furthermore, Chrysos assumes no obligations in the event of any damage or loss, or any other impact, directly or indirectly resulting from the use of any content, goods or services available on or through any such thirdparty websites and resources. <br /><br />
+3.8. Before the use of the website and/or purchase of Chrysos Tokens, User is obliged to read and acknowledge Accompanying Documents that follow these Terms. They regulate the Website usage and Chrysos Token Sale and User shall read them carefully. The mentioned Accompanying Documents shall be considered as integral part hereof and their terms of use shall be the same as of Terms presented herein. Use of website represents consent with Accompanying Documents and Terms and their acceptance. <br /><br />
+<b>SECTION 4. USER’S WEBSITE REGISTRATION AND USER’S ACCOUNT</b><br /><br />
+4.1. Deactivation of the registration and User account can be done at any time and for any reason by sending request in the contact form. Violation of these Terms and terms in other Accompanying Documents can result in temporary/permanent termination of your use of and registration on with the Website.<br /><br />
+4.2. You hereby expressly consent that You are solely responsible for the use of Your login and password for the Account, for any registration data provided for Account creation, and for any actions done during any use of Your Account. You agree to keep Your login information and password private and to immediately notify the Chrysos of any unauthorized Account activity You may be aware of and modify Your login information respectively. You are solely responsible for any loss or damage You or We may su er as a result of Your failure to do so.<br /><br />
+4.3. For the purpose of Chrysos Tokens purchase, the Chrysos will register You (upon Your request), on the Website and create an individual Account with Your respective login and password. You warrant that any and all information provided for the purpose of Your Account creation is valid, current, complete and accurate. Registration data and other information about You is subject to the accompanying Privacy Policy available on the Website. <br /><br />
+<b>SECTION 5. INDEMNIFICATION</b><br /><br />
+5.1. You shall not have any claim of any nature whatsoever against Us for any failure by Us to carry out any of our obligations under these Terms as a result of causes beyond our control, including but not limited to any strike, lockout, shortage of labour or materials, delays in transport, hacker attacks on the Website or any resources which have any relation to Chrysos Token Sale, accidents of any kind, any default or delay by any subcontractor or supplier of ours, riot, political or civil disturbances, the elements, by an act of state or government including regulatory action imposed, any delay in securing any permit, consent or approval required by Us, for the supply of products under these Terms or any other authority or any other cause whatsoever beyond our absolute and direct control.<br /><br />
+5.2. To the extent allowable pursuant to Applicable Law, the User shall indemnify, defend, and hold the Chrysos and/or its subsidiaries, affiliates, directors, officers, employees, agents, successors, and permitted assignees harmless from and against any and all claims, damages, losses, suits, actions, demands, proceedings, expenses, and/or liabilities (including but not limited to reasonable attorneys’ fees incurred and/ or those necessary to successfully establish the right to indemnification) filed/incurred by any third party against the Chrysos arising out of a breach of any warranty, representation, or obligation hereunder.<br /><br />
+<b>SECTION 6. NO WARRANTIES AND LIMITATION OF LIABILITY</b><br /><br />
+6.1. This website and the tokens are provided on an “as is” basis and without any warranties of any kind, either expressed or implied. You assume all responsibility and risk with respect to your use of the Website and buying of any amount of the tokens and their use. <br /><br />
+6.2. You hereby expressly agree that, to the maximum extent permitted by the applicable law, the Website Owner does not accept any liability for any damage or loss, including loss of business, revenue, or profits, or loss of or damage to data, equipment, or software (direct, indirect, punitive, actual, consequential, incidental, special, exemplary or otherwise), resulting from any use of, or inability to use, this website or the material, information, software, facilities, services or content on this website, from buying of the tokens or their use by the User, regardless of the basis, upon which the liability is claimed and even if Website Owner has been advised of the possibility of such loss or damage.<br /><br />
+6.3. You understand and agree that the Website Owner shall not be held liable to and shall not accept any liability, obligation or responsibility whatsoever for any change of the value of the tokens. The Website Owner shall not provide the User refund possibilities (payout liquidity) for purchased tokens. The User understands and expressly agrees that the Website Owner shall not guaranty in any way that the tokens might be sold or transferred during or after the ICO.<br /><br />
+6.4. At any case, total amount of our aggregate liability hereunder may not exceed 500 (five hundred) US dollars. If applicable law does not allow all or any part of the above limitation of liability to apply to You, the limitations will apply to You only to the extent permitted by applicable law. You understand and agree that it is your obligation to ensure compliance with any legislation relevant to your country of domicile concerning use of this website and use and buying of the tokens, and that the Website Owner should not accept any liability for any illegal or unauthorized use of this website and use and buying of the tokens. You agree to be solely responsible for any applicable taxes imposed on tokens purchased hereunder.<br /><br />
+6.5. The Website Owner does not warrant or represent that any information on the website is accurate or reliable or that the website will be free of errors or viruses, that defects will be corrected, or that the service or the server that makes it available is free of viruses or other harmful components. Website Owner shall not be liable for uninterpreted availability of the website at all times, in all countries and/or all geographic locations, or at any given time. <br /><br />
+<b>SECTION 7. DISCLAIMERS</b><br /><br />
+7.1. Purchase of Tokens can result in financial losses and taxation risks. There are number of risks connected with purchase of any kind of cryptocurrencies. Purchasing Chrysos Tokens You agree and acknowledge risks listed herein. If any of the following risks are unacceptable for You, You should not purchase any Chrysos Tokens.<br /><br />
+7.2. We are not responsible for the proper and/or complete transmission of the information contained in any electronic communication or of the electronic communication itself, nor for any delay in its delivery or receipt thereof.<br /><br />
+7.3. The Chrysos Tokens are unregulated. Chrysos development team is closely following changes to legislation in the most relevant jurisdictions in the world and undertakes to act accordingly, if changes impact operations of Chrysos Tokens. The Chrysos and/or Chrysos development team or any of its affiliated entities is not a financial institution and is currently not under supervision of any financial supervisory authority. We do not provide any licensed financial services, such as investment services, fund management or investment advice. This Chrysos is not a public offering of equity or debt and consequently does not fall under the securities or any prospectus regulation. <br /><br />
+7.4. The User recognizes that the Chrysos is currently under development and may undergo significant changes before release. User acknowledges that any expectations regarding the form and functionality of the Chrysos held by the User may not be met upon release of the mentioned project, for any number of reasons including a change in the design and implementation plans and execution of the implementation of the Chrysos.<br /><br />
+<br /><br />
+7.5. Security measures have been implemented to ensure the safety and integrity of any of the services related to the Chrysos. However, despite this, information that is transmitted over the internet or Blockchain may be susceptible to unlawful access and monitoring. <br /><br />
+7.6. We will take reasonable steps to exclude any viruses from the Website, but cannot guarantee or warrant that any material available for downloading from the Website will be free from infection, viruses and/or other code that has contaminating or destructive properties and accordingly no liability is accepted for viruses.<br /><br />
+7.7. None of the information or analyses presented are intended to form the basis for any investment decision, and no specific recommendations are intended, and the Website is not, does not offer and shall not be construed as investment or financial product.<br /><br />
+7.8. Should You proceed to purchase any Chrysos Tokens and the product fails to be suitable for the special or particular purpose as intended by You, we will not be liable to You for such unsuitability (including but not limited to accepting the return of, or refunding to You the purchase price of the respective Chrysos Tokens). <br /><br />
+7.9. This document or any other document, produced and signed by Us, as well as the Website, and any of their content does not constitute an offer or solicitation to sell shares or securities. <br /><br />
+7.10. We make no representations or warranties, whether express or implied, and assume no liability or responsibility for the proper performance of any services, online cryptocurrency services, assets or platforms and/or the information, images or audio contained or related to the Website. You use all of the mentioned at your own risk.<br /><br />
+7.11. Any cryptographic tokens that possess value in public markets, such as ETH, have demonstrated extreme fluctuations in price over short periods of time on a regular basis. A Purchaser of Chrysos Tokens should be prepared to expect similar fluctuations, both down and up, in the price of Chrysos Tokens denominated in respective cryptocurrency (ETH) or FIAT currencies of other such jurisdictions. Such fluctuations are due to market forces and represent changes in the balance of supply and demand. The Chrysos will execute any necessary actions to stabilize the currency and avoid volatility. However, Chrysos does not guarantee stable value of currency. By purchasing Chrysos Tokens, You expressly acknowledge and represent that You fully understand that they may experience volatility in pricing and will not seek to hold the Chrysos liable for any losses or any special, incidental, or consequential damages arising from, or in any way connected to, the sale of Chrysos Tokens. Chrysos will not participate in the process of any changes of the Chrysos tokens and shall not bear any responsibility for such changes.<br /><br />
+<b>SECTION 8. INTELLECTUAL PROPERTY RIGHTS</b><br /><br />
+8.1. The Website has valid, unrestricted and exclusive ownership of rights to use the patents, trademarks, trademark registrations, trade names, copyrights, know-how, technology and other intellectual property necessary to the conduct of selling of the Chrysos Tokens and his activities generally. <br /><br />
+8.2. In no way shall this Agreement entitle the User for any intellectual property of the Website, including the intellectual property rights for the Website and all text, graphics, User interface, visual interfaces, photographs, trademarks, logos, artwork, and computer code, design, structure, selection, coordination, expression and other content connected to the Website. Arrangement of such content is owned by Chrysos and is protected by the Intellectual Property Rights and fair competition laws. <br /><br />
+8.3. There are no implied licenses under the Agreement, and any rights not expressly granted to the User hereunder are reserved by Chrysos.<br /><br />
+<b>SECTION 9. APPLICABLE LAW AND DISPUTE RESOLUTION</b><br /><br />
+9.1. All questions concerning the construction, validity, enforcement and interpretation of this Agreement shall be governed by and construed and enforced in accordance with the laws of USA, Delaware (Applicable Law). <br /><br />
+9.2. To resolve any dispute, controversy or claim between them arising out of or relating to this Agreement, or the breach thereof, the Parties agree first to negotiate in good faith for a period of not less than sixty (60) days following written notification of such controversy or claim to the other Party.<br /><br />
+9.3. If the negotiations do not resolve the dispute, controversy or claim to the reasonable satisfaction of all Parties during such period, then the Parties irrevocably and unconditionally submit to the respective claim to the binding arbitration administered by American Arbitration Association in accordance with its rules, and judgment upon the award rendered by the arbitrator(s) (which is the referral of a dispute to one or more persons charged with reviewing the dispute and making a final and binding determination to resolve it instead of having the dispute decided by a judge or jury in court) may be entered in any court having jurisdiction thereof. Except for any disputes, claims, suits, actions, causes of action, demands or proceedings in which either Party seeks injunctive or other equitable relief for the alleged unlawful use of intellectual property, including, without limitation, copyrights, trademarks, trade names, logos, trade secrets or patents, You and the Chrysos (a) waive Your and Chrysos’s respective rights to have any and all disputes arising from or related to these Terms resolved in a court, and (b) waive your and Chrysos ’s respective rights to a jury trial. The substantive law shall be the Applicable Law (including all other operating rules, policies, and procedures that may be issued by the Chrysos and published from time to time on the Website), without regard to conflict of law rules or principles (whether of the USA or any other jurisdiction). The language of the arbitration shall be English.<br /><br />
+<b>SECTION 10. MISCELLANEOUS</b> <br /><br />
+10.1. Severability. If any term, provision, covenant or restriction of this Agreement is held by a court of competent jurisdiction to be invalid, illegal, void or unenforceable, the remainder of the terms, provisions, covenants and restrictions set forth herein shall remain in full force and e ect and shall in no way be a ected, impaired or invalidated, and the parties hereto shall use their commercially reasonable efforts to find and employ an alternative means to achieve the same or substantially the same result as that contemplated by such term, provision, covenant or restriction. It is hereby stipulated and declared to be the intention of the parties that they would have executed the remaining terms, provisions, covenants and restrictions without including any of such that may be hereafter declared invalid, illegal, void or unenforceable.<br /><br />
+10.2. Headings. Headings of sections are for convenience only and shall not be used to limit or construe such sections. All the sections in the agreement shall survive any termination or expiration of these Terms.<br /><br />
+10.3. State Policies. The Chrysos and its Affiliates strictly follow anti-money laundering (AML), “know your customer” (KYC) and other banking or government regulations in respective jurisdictions. Each and any User fully agrees to assist the Chrysos in fulfillment of the mentioned regulations and provide any necessary information if such is required from the User by the authorized authority.<br /><br />
+10.4. Entire Agreement. This Agreement is intended to fully reflect the terms of the original agreement between the Parties. No provision of the Agreement shall be considered waived unless such waiver is in writing and signed by the Party that benefits from the enforcement of such provision. No waiver of any provision in the Agreement, however, will be deemed a waiver of a subsequent breach of such provision or a waiver of a similar provision. In addition, a waiver of any breach or a failure to enforce any term or condition of the Agreement will not in any way affect, limit, or waive a Party’s rights hereunder at any time to enforce strict compliance thereafter with every term and condition hereof.<br /><br />
+10.5. Tax Issues. The Chrysos makes no representations concerning the tax implications of the sale of Chrysos Tokens or the possession or use of them. The User bears the sole responsibility to determine if the purchase of Chrysos Tokens with cryptocurrency or the potential appreciation or depreciation in the value of Chrysos Tokens over time has tax implications for the User in the User’s home jurisdiction. By purchasing Chrysos Tokens, and to the extent permitted by law, the User agrees not to hold the Chrysos liable for any tax liability associated with or arising from the purchase of Chrysos Tokens. All fees and charges payable by You are exclusive of any taxes, and shall certain taxes be applicable, they shall be added on top of the payable amounts. Upon our request, You will provide Us any information we reasonably request to determine whether we are obligated to collect VAT from You, including your VAT identification number. If any deduction or withholding is required by law, You will notify Us and will pay Us any additional amounts necessary to ensure that the net amount that we receive, after any deduction and withholding, equals the amount we would have received if no deduction or withholding had been required. Additionally, You will provide us with documentation showing that the withheld and deducted amounts have been paid to the relevant taxing authority.<br /><br />
+10.6. Assignment. The Chrysos may, at its sole discretion, assign any of its rights and/ or delegate its duties under this Agreement (including, but not limited any and all intellectual property rights for the all the intellectual property rights objects created during or referring to Chrysos, as well as the Chrysos platform itself) to any third party at any time. You may not assign Your rights or delegate Your duties as Website User and Chrysos Tokens purchaser, and any assignment or delegation without the previous written consent of the Chrysos shall be null and void.<br /><br />
+10.7. Communication and notices. Any communication concerning these Terms execution and/or violation should be conducted only via email of the User and through the Chrysos’s contact form on the Website. The User’s official email for communication shall be deemed the email specified by the User during the Account registration process. The one and only language of the communication shall be English. We may provide any notice to You under this Agreement by: (i) posting a notice on the Website; or (ii) sending an email to the email address then associated with Your account. Notices We provide by posting on the Website will be e ective upon posting and notices We provide by email will be e ective when We send the email. It is Your responsibility to keep Your email address current. You will be deemed to have received any email sent to the email address then associated with Your account when We send the email, whether or not You actually receive or read the email.<br /><br />
+10.8. Force Majeure Events. We shall not be liable for (1) any inaccuracy, error, delay in, or omission of (a) any information, or (b) the transmission or delivery of information; (2) any loss or damage arising from any event beyond Our reasonable control, including but not limited to flood, extraordinary weather conditions, earthquake, or other act of God, fire, war, insurrection, riot, labour dispute, accident, action of government, communications, power failure, or equipment or software malfunction or any other cause beyond Our reasonable control (each, a "Force Majeure Event"). <br /><br />
+10.9. Termination and Suspension. Notwithstanding anything contained herein, We reserve the right, without notice and at our sole discretion, to terminate these Terms or suspend Your right to access the Website, including (but not limited to) in case of your breach of these Terms or if the Chrysos believes You have committed fraud, negligence or other misconduct. You may terminate these Terms without notice by discontinuing use of the Website. All rights granted to You under these Terms will immediately be revoked upon our termination of these Terms or Our suspension of Your access to the Website. In the event of any Force Majeure Event (as defined in "Miscellaneous" Section), breach of this agreement, or any other event that would make provision of given by Us commercially unreasonable for Chrysos, we may, in our discretion and without liability to You, with or without prior notice, suspend Your access to all or a portion of our services/Website. We may terminate Your access to the Website in our sole discretion, immediately and without prior notice, and delete or deactivate Your Account and all related information and files in such Account without liability to You, including, for instance, in the event that You breach any term of these Terms. In the event of termination, Chrysos will attempt to return any funds stored in your Account not otherwise owed to Chrysos, unless Chrysos believes You have committed fraud, negligence or other misconduct. <br /><br />
+* * * Intellectual property Notification: This document belongs to the Chrysos and is protected by copyright laws. It’s copying and/or use by any third party in full or in part without prior written consent of the Chrysos is strictly prohibited.
+</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+                window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+                    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+                _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+                    $.src="https://v2.zopim.com/?5M73hUCtRYwS4Kdjfs9fRqwLvnNAVl3T";z.t=+new Date;$.
+                        type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+            </script>
+
+<div class="modal fade" id="myModal1" role="dialog">
+<div class="modal-dialog modal-lg">
+
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h4 class="modal-title" style="color: black;">Privacy Policy</h4>
+</div>
+<div class="modal-body">
+<p style="color: black;text-align: justify;">
+CHRYSOS TOKEN SALE PRIVACY POLICY <br />
+SECTION 1. PRIVACY POLICY STATUS AND ACCEPTANCE <br />
+SECTION 2. PERSONAL DATA COLLECTION, PROCESSING AND USE<br />
+SECTION 3. PERSONAL DATA PRESERVATION AND DISTRIBUTION<br />
+SECTION 4. DATA KEEPING<br />
+SECTION 5. SECURITY<br />
+SECTION 6. CORRECT/UPDATE/DELETE PERSONAL DATA<br />
+SECTION 7. AMENDMENTS<br />
+SECTION 8. CONTACT<br /><br />
+<b>SECTION 1. PRIVACY POLICY STATUS AND ACCEPTANCE</b> <br /><br />
+1.1. This Privacy Policy (henceforward referred to as the “Policy”) formulates the general rules of User’s Personal Data collection, processing, distribution, use and keeping by the Website Owner. <br /><br />
+1.2. Throughout this Policy, we use the term “Personal Data” to describe the amount of information that can be correlated with a specific person (the User) and can be used to identify that person (including the information about Your activities, such as information about Your use of the Website, when directly linked to personally identifiable information, including automatically assembled). We do not consider Personal Data to include information that has been anonymized so that it does not identify a specific User<br /><br />
+1.3. This Policy is an integral part of Chrysos Tokens Sale General Terms & Conditions. In terms not regulated by this Policy, the Chrysos Tokens Sale General Terms & Conditions shall apply to the relationships that appear henceforth. <br /><br />
+1.4. The definitions set forth herein and mentioned with a capital letter shall have the meaning as described in Chrysos Tokens Sale General Terms & Conditions. <br /><br />
+1.5. Each User must carefully read and abide this Policy. <br /><br />
+1.6. It is implied and assumed per se that by the fact of the Website use and Chrysos Tokens purchase or by providing Us with the Personal Data directly on our request, the respective User has fully read, understood and accepted this Policy. If any User does not agree with this Policy in general or any part of it, this User should refrain from using the Website and/or of Chrysos Tokens acquisition. <br /><br />
+<b>SECTION 2. PERSONAL DATA COLLECTION, PROCESSING AND USE</b><br /><br />
+2.1. The purpose of personal data accumulation, storage and processing within the Chrysos project shall only be the identification of the Chrysos Token purchaser/ participant of the Chrysos Tokens Sale.<br />
+2.2. We gather Personal Data from running the Website and use Personal Data, provided to Us by You. When You visit the Website or use our products, We collect the Personal Data sent to Us by Your computer, Your smartphone, or other access device. This Personal Data includes:<br />
+• Your IP address<br />
+• Device information including, but not limited to, identifier, name, and type, operating system<br />
+• Mobile network information<br />
+• Standard web log information, such as Your browser type, and the pages You accessed on Our Website. When You use a location-enabled device with Our Website and products, We may collect geographical location data or use various means to determine the location, such as sensor data from Your device that may, for example, provide data on cell towers nearby and Wi-Fi access spots. However, we will not release Your strict personal information that allows for identification to any third party without Your consent, except as set forth herein. <br /><br />
+2.3. If You create an Account on our Website, We collect and store the following types of Personal Data about You: <br /><br />
+• Your name <br />
+• Your address <br />
+• Your email and phone number <br /><br />
+2.4. In certain cases (when according to Government Regulations additional verification by bank or compliance authority is necessary) We may require additional information from You, namely the following:<br /><br />
+• Date of birth; <br />
+• Passport or driver license details;<br />
+• Numbers that You may use or have registered with Your local tax authority;<br />
+• Utility bills; <br />
+• Your Photographs; <br />
+• Sources of Income confirmation;<br />
+• Sworn statements. The abovementioned information and details shall be provided only upon special personal request and specified in respective email. <br /><br />
+2.5. We keep Our right to request basic Personal Data, described in clause 2.4., prior to activating Your Account on the Website and/or any services available through the Website. We may refuse You access to our services and Website should We have grounded doubts as to the validity, authenticity and genuineness of the Personal Data provided by You. <br /><br />
+2.6. If You do not provide Us with the Personal Data as specified in clauses 2.3., 2.4. hereof, You shall not be able to use the full functionality of the Website and hold the balance of Chrysos Tokens and/or use the Chrysos platform. We shall not bear any liability for such possible incomplete use. <br /><br />
+2.7. When You access the Website or use Our products or services We (or Google Analytics, or a similar service provider on our behalf) may place small data files called cookies on Your computer or any other device you use. We implement these technologies to recognize You as our User, customize Our Website and advertising, measure promotional efficacy and collect information about Your computer (as described in clause 2.2. hereof) or other access device to alleviate risk, prevent fraud, promote trust and safety. You may control the use of cookies within Your Internet browser settings. If you reject or delete certain cookie files, be aware that our Website’s related features and functions and services performance may be impaired. <br /><br />
+2.8. You agree to provide the Personal Data specified here and further on and agree that Personal Data You provided may be processed and stored by Us or Our counterparties (as specified in clause 3.4. and further on) during the period of time that is practically necessary to fulfill the aims and purposes of Chrysos Tokens Sale as set forth in the Whitepaper.<br /><br />
+2.9. We only collect the Personal Data that is required for proper use of the Website or for Chrysos Tokens purchase from our Users. We use Your Personal Data to particularly: <br /><br />
+• Administer Our Website and provide services;<br />
+• Develop new products and services;<br />
+• Personalize Our Website for You; <br />
+• Send You technical notices and support and administrative messages; <br />
+• Communicate with You about products, services, promotions, events and other news and information we think will be of interest to You;<br />
+• Monitor and analyze trends, usage and activities in connection with Our Website and services; <br />
+• Provide third parties with statistical information about Our Users (no identification ability); <br />
+• Detect, investigate and prevent fraudulent transactions and other illegal activities and protect the rights and property of the Website Owner and others; <br />
+• Link or combine Personal Data We collect from or about You; and<br />
+• Verify compliance with the terms and conditions governing the use of Our Website (including monitoring private messages sent through the Website private messaging service). <br /><br />
+2.10. The Website Owner is the only data controller and processor, except for the cases when there is an objective Website Owner’s need to control/process or store Personal Data at Website Owner’s counterparties or agents. If a counterparty of this kind or agent have a need to be engaged by the Website Owner, we shall notify You in advance.<br /><br />
+2.11. You may access, review and edit Your Personal Information at any time by logging in to the Website using Your credentials.<br /><br />
+2.12. You have the right to require the deletion of Your Personal Data provided by You to Us or claim/revoke your consent for collection, processing and storage of Your personal data by Us at any time. If You decide to do so, You should send the respective notification using Your Account on the Website or via User contact form on the Website. We shall delete Your respective Personal Data from any sources within 24 hours from the moment We receive the request from You. The Website Owner reserves the right to suspend provision of any services to You referring to Chrysos project and/or delete Your Account on the Website without prior notice or compensations of any kind. <br /><br />
+2.13. We do not intend to publish any Chrysos Tokens purchase related Personal Data without Your prior written consent.<br /><br />
+<b>SECTION 3. PERSONAL DATA PRESERVATION AND DISTRIBUTION</b> <br /><br />
+3.1. We will make every effort provided by Applicable Law to keep all of Your Personal Data secret. <br /><br />
+3.2. We store and process Your Personal Data on Our servers in numerous locations. By submitting Your Personal Data, You agree to the fact of its transfer, storage and processing. We will take all reasonable required measures to ensure Your Personal Data security. We protect Your Personal Data in accordance with internationally recognized standards by application of physical, technical, and administrative security measures to reduce the risks of loss, misuse, unauthorized access, disclosure, and alteration. Some of the safeguards We use are firewalls and data encryption, physical access controls to our data centers, and information access authorization controls. We authorize Personal Data access only if it is required for service responsibilities fulfillment. All of our physical, electronic, and processing safeguards are designed to comply with applicable laws and regulations. Third parties may be located in other countries where the laws on processing of Personal Data may be less stringent. From time to time, Personal Data may be also stored in other locations. In this case We ensure that Personal Data is stored and processed at reasonable levels of care and security. <br /><br />
+3.3. Due to certain security checks from Our trusted partners, we are required to compare Your Personal Data to third party databases in order to verify its accuracy and confirm Your identity. This allows Us to comply with relevant anti-money laundering regulations and “know your customer”(KYC) regulations. <br /><br />
+3.4. We will not share Your Personal Data with any third parties other than Our respective identity verification partners. We reserve our right to share Your Personal Data with: <br /><br />
+• Our banking and brokerage partners; <br />
+• Companies that We plan to merge with or be acquired by (should such a combination occur, We will notify You and will require that the newly combined entity follows these terms with respect to Your Personal Data); <br />
+• 3rd party identification service providers for fraud prevention purposes; <br />
+• Law enforcement, government officials, or other third parties (when We are compelled to do so by a subpoena, court order, or similar legal procedure); <br />
+•We believe in good faith that the disclosure of Personal Data is necessary to prevent physical harm or financial loss, to report suspected illegal activity or to investigate violations of any of Our policies; <br />
+• Our Personal Data processing counterparties or agents, hired by or cooperating with, whose services are required by us from the practical point of view; <br />
+• Other third parties with Your prior consent or direction to do so. <br />
+3.5. We will not provide Your Personal Data to any other Website users or third parties other than described in clause 3.4. herein without Your consent or direction to do so. <br /><br />
+3.6. We will not sell or rent Your Personal Data to third parties.<br /><br />
+3.7. We may combine Your Personal Data with information we collect from other companies and use it to improve and personalize the Website and our products, as well as our content and advertising.<br /><br />
+3.8. We may use Your name and email address to provide You with information about products or services that may be of interest to You. Your Personal Data will be used according to the set of applicable laws or with your consent.<br /><br />
+3.9. Our services may, from time to time, contain links to and from the websites of our partner networks, advertisers, and affiliates (including, but not limited to, websites on which the Website is advertised). If You follow a link to any of these websites, please note that these websites and any services that may be accessible through them have a Privacy Policy of their own and that We do not accept any responsibility or liability for these policies or for any Personal Data that may be collected through these websites or services, such as contact information and location. Please check these policies before You submit any personal data to these websites or use these services.<br /><br />
+<b>SECTION 4. DATA KEEPING</b><br /><br />
+4.1. In accordance with Applicable Law and in the need to provide services to Our Users, We may hold Your Personal Data. This requirement is conditioned by the need of complying with legal obligations and resolving possible disputes. We may retain Your Personal Data for as long as Your account is active. Moreover, Your Personal Data may be held beyond the abovementioned period until it is indispensable for Us to have relevant information with respond to any issues that may arise later.<br /><br />
+<b>SECTION 5. SECURITY</b> <br /><br />
+5.1. We use relevant electronic and processing safeguards to protect the privacy of the information You provide from loss, misuse, disclosure, alteration and destruction. Please note that transmission of data or information (including communications by e-mail) over the Internet or other publicly accessible networks is not totally secure. Please note that We are not liable for the security of any data You are transmitting over the Internet, or third party content. <br /><br />
+<b>SECTION 6. CORRECT/UPDATE/DELETE PERSONAL DATA</b> <br /><br />
+6.1. You have the right to access Your Personal Data and to require the correction, updating or deletion of incorrect or/and inaccurate data by means of a contact form on the Website. This request must still comply with Chrysos Tokens Sale General Terms & Conditions and Our legal obligations. <br /><br />
+<b>SECTION 7. AMENDMENTS</b> <br /><br />
+7.1. The Website Owner reserves the right to modify or amend this Policy at its own discretion. Your continued usage of the Website and/or services shall mean Your acceptance of those amendments. <br /><br />
+<b>SECTION 8. CONTACT</b><br /><br />
+8.1. If You have questions concerning this Privacy Policy, please feel free to send us the respective message using the respective contact form on the Website.
+</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<i class=" revealOnScroll fa fa-chevron-circle-up fa-3x i8 revel fadeInUp" id="back-to-top" title="Go to top" aria-hidden="true"></i>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://www.chrysoscoin.com/front/vendors/jquery/js/jquery-3.2.1.min.js"></script>
+<script src="https://www.chrysoscoin.com/front/vendors/bootstrap/js/popper.min.js"></script>
+<script src="https://www.chrysoscoin.com/front/vendors/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="https://www.chrysoscoin.com/front/vendors/slick/js/slick.min.js"></script>
+
+<script src="https://www.chrysoscoin.com/front/vendors/owlcarousel/js/owl.carousel.min.js"></script>
+
+<script src="https://www.chrysoscoin.com/front/vendors/wow.min.js"></script>
+
+<script src="https://www.chrysoscoin.com/front/vendors/magnific-popup/js/magnific-popup.min.js"></script>
+
+<script src="https://www.chrysoscoin.com/front/vendors/validate.js"></script>
+
+<script src="https://www.chrysoscoin.com/front/js/contact.js"></script>
+
+<script src="https://www.chrysoscoin.com/front/js/script.js"></script>
+<script src="https://www.chrysoscoin.com/front/js/jquery.countdown.js"></script>
+<script src="https://www.chrysoscoin.com/front/js/moment.js"></script>
+<script src="https://www.chrysoscoin.com/front/js/moment-timezone-with-data.js"></script>
+<script>
+    var nextPhase = moment.tz("2018-01-24 14:00", "Asia/Singapore");
+    $('#clock').countdown(nextPhase.toDate(), function (event) {
+        $(this).html(event.strftime('<div class="tim-spe"><span class="tim-t">%D</span><span class="tim-s">Days</span></div>' +
+            '<div class="tim-spe"><span class="tim-t">%H</span><span class="tim-s">Hours</span></div>' +
+            '<div class="tim-spe"><span class="tim-t">%M</span><span class="tim-s">Minutes</span></div>' +
+            '<div class="tim-spe"><span class="tim-t">%S</span><span class="tim-s">Seconds</span></div>')
+        );
+    });
+    var scrollTrigger = 100;
+    $(window).scroll(function(){
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > scrollTrigger) {
+            $('#back-to-top').addClass('show');
+        } else {
+            $('#back-to-top').removeClass('show');
+        }
+    })
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 1200);
+    });
+    $('#noticeModal').modal('show');
+    $(function () {
+        var $window = $(window),
+            win_height_padded = $window.height() * 1.1,
+            isTouch = Modernizr.touch;
+        if (isTouch) {
+            $('.revealOnScroll').addClass('animated');
+        }
+        $window.on('scroll', revealOnScroll);
+        function revealOnScroll() {
+            var scrolled = $window.scrollTop(),
+                win_height_padded = $window.height() * 1.1;
+            // Showed...
+            $(".revealOnScroll:not(.animated)").each(function () {
+                var $this = $(this),
+                    offsetTop = $this.offset().top;
+                if (scrolled + win_height_padded > offsetTop) {
+                    if ($this.data('timeout')) {
+                        window.setTimeout(function () {
+                            $this.addClass('animated ' + $this.data('animation'));
+                        }, parseInt($this.data('timeout'), 10));
+                    } else {
+                        $this.addClass('animated ' + $this.data('animation'));
+                    }
+                }
+            });
+            // Hidden...
+            $(".revealOnScroll.animated").each(function (index) {
+                var $this = $(this),
+                    offsetTop = $this.offset().top;
+                if (scrolled + win_height_padded < offsetTop) {
+                    $(this).removeClass('animated fadeInUp flipInX lightSpeedIn')
+                }
+            });
+        }
+        revealOnScroll();
+    });
+    Highcharts.chart('container', {
+        credits: {
+            enabled: false
+        },
+        exporting: false,
+        chart: {
+            backgroundColor: "transperent",
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: '',
+            color: "white"
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false
+                },
+                showInLegend: true
+            }
+        },
+        series: [{
+            showInLegend: false,
+            name: 'Tokens',
+            colorByPoint: true,
+            data: [{
+                name: 'Mining',
+                color: "#1a3e66",
+                y: 70
+            }, {
+                name: 'Presale',
+                color: "#f9646c",
+                y: 25,
+                sliced: true,
+                selected: true
+            }, {
+                name: 'Reserve',
+                color: "#ffde70",
+                y: 5
+            }]
+        }]
+    });
+</script>
+</body>
+</html>
