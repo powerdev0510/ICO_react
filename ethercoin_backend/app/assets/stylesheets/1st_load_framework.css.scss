@@ -82,10 +82,16 @@ footer{
   position: absolute;
   top: 0;
 }
+.social_net a{
+  float: right;
+}
 .alert-success{
   position: absolute;
   margin-top: 40px;
   width: 50%;
+}
+.collapse.navbar-collapse{
+  float: right;
 }
 .progress .progress-left .progress-bar{
   left: 100%;
