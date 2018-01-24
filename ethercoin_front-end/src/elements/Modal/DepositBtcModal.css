@@ -1,0 +1,42 @@
+@media screen and (max-width: 991px) {
+  #depositBtcModal{
+    margin-left: -250px !important;
+  }
+}
+
+#depositBtcModal{
+  padding:15px;
+  border : 1px solid grey;
+  background-color: white;
+  border-radius: 10px;
+  position: fixed; 
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  margin-top: -250px;
+  left: 50%;
+  margin-left: -120px;
+}
+
+#depositBtcModal .row{
+  margin: 0px;
+}
+#depositBtcModal .content.row{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+#depositBtcModal .modalClose{
+  cursor: pointer;
+  color: black;
+}
+#ModalBack{
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  position: fixed;
+  background-color: black;
+  opacity: .5;
+}
