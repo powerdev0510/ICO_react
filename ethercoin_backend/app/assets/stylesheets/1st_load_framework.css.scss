@@ -14,10 +14,13 @@
 main{
   padding: 0 !important;
 }
+nav{
+  padding:1em 1em;
+}
 .signup_background{
   position: absolute;
   z-index: 1;
-  background-image: url('https://cdn-images-1.medium.com/max/1600/1*a9CoIZ_zuLhHLs9byIY23Q.jpeg');
+  background-image: url('https://ripple.com/wp-content/themes/ripple-beta/assets/img/xrp/distributed.gif');
   background-repeat: no-repeat;
   background-size: cover;
   opacity: .9;
@@ -109,7 +112,7 @@ footer{
 .social_net a{
   float: right;
 }
-.alert{
+.alert-success, .alert-danger{
   position: absolute;
   margin-top: 40px;
   width: 50%;
