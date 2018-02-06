@@ -8,15 +8,10 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
     devise_parameter_sanitizer.permit(:account_update, keys: [:name])
   end
-
+  
   def after_sign_in_path_for(resource)
     url = "http://localhost:3001"
     puts 'uhahahahahaha'
     return url
-  end
-
-  def after_inactive_sign_up_path_for
-    puts '1293480912809481209840928'
-  end
-  
+  end  
 end
